@@ -19,7 +19,7 @@ class Read:
             self.A.append(list())
 
             for numb in str[:len(str) - 1]:
-                self.A[i].append(int(numb))
+                self.A[i].append(float(numb))
             self.B.append(str[len(str) - 1])
 
             i += 1
@@ -35,7 +35,7 @@ class Read:
         tmpB = list()
 
         for j in self.B[:len(self.B) - 1]:
-            tmpB.append(int(j))
+            tmpB.append(float(j))
 
         self.B = np.array(tmpB)
         self.A = np.array(self.A[:i - 1])
